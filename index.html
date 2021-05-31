@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Parallax</title>
+		<meta charset="utf-8"0>
+
+		<style type="text/css">
+
+			/* Configurações Padrões
+			---------------------------------*/
+			body, html {
+				margin: 0;
+				font: 16px "Lato", sans-serif;
+				color: #777;
+				height: 100%;
+			}
+
+			.conteudo {
+				color: #777;
+				background-color: white;
+				text-align: justify;
+				padding: 50px 80px;
+			}
+
+			h3 {
+				text-transform: uppercase;
+				color: #111;
+				text-align: center;
+			}
+
+			p {
+				margin-bottom: 20px;
+				line-height: 22px;
+			}
+			
+
+			/* Efeito Parallax
+			---------------------------------*/
+			.caixa1, .caixa2, .caixa3, .caixa4 {
+				position: relative;
+				height: 100%;
+				opacity: 0.8;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+			}
+
+			.caixa1 {
+				background-image: url(images/imagem1.jpg);
+			}
+
+			.caixa2 {
+				background-image: url(images/imagem2.jpg);
+			}
+
+			.caixa3 {
+				background-image: url(images/imagem3.jpg);
+			}
+
+			.caixa4 {
+				background-image: url(images/imagem4.jpg);
+			}
+			
+			.conteudo-titulo {
+				position: absolute;
+				left: 0;
+				top: 45%;
+				width: 100%;
+				text-align: center;
+			}
+
+			.conteudo-titulo span.titulo {
+				color: #fff;
+				background-color: #111;
+				padding: 18px;
+				font-size: 25px;
+				letter-spacing: 5px;
+				text-transform: uppercase;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="caixa1">
+			<div class="conteudo-titulo">
+				<span class="titulo">Passeio de Balões
+				</span>
+			</div>
+		
+		</div>
+
+		<div class="conteudo">
+			<h3>Parallax</h3>
+			<p>
+				Na computação gráfica, o efeito Parallax costuma ser simulado com a técnica de mover imagens de fundo em uma velocidade mais lenta do que as imagens de primeiro plano, criando no nosso cérebro a ilusão de profundidade em planos 2D.
+
+				No caso desses site a imagem do fundo não se movimenta, mas a da frente sim, então, cria o efeito de movimento muito interessante.
+			</p>
+
+			<p>
+				O Efeito é criado a partir da expansão do height na TAG html e body com fixação do background usando o "background-attachment: fixed" e a configuração de alguns parâmetros.
+			</p>
+
+				Abaixo é a configução unificada das classes:<br><br>
+				<hr>
+
+				<strong>.caixa1, .caixa2, .caixa3, .caixa4 </strong>{<br><br>
+				<strong>position:</strong> relative;<br>
+				<strong>height:</strong> 100%;<br>
+				<strong>opacity:</strong> 0.8;<br>
+				<strong>background-repeat:</strong> no-repeat;<br>
+				<strong>background-size:</strong> cover;<br>
+				<strong>background-position:</strong> center;<br>
+				<strong>background-attachment:</strong> fixed;<br><br>
+
+				<strong>OBS:</strong> Assim é necessário adicionar apenas o background em cada uma das classes.<br><br>
+
+				<strong>.caixa1 </strong>{<br>
+				<strong>background-image:</strong> url(pasta/imagem.jpg);<br>
+			}<br><br>
+			<strong>ETC...: .caixa2 .caixa3 .caixa4</strong>
+
+			</p>
+			<hr>
+
+			<p>
+			<strong>.conteudo-titulo</strong> {<br><br>
+				<strong>position:</strong> absolute;<br>
+				<strong>left:</strong> 0;<br>
+				<strong>top:</strong> 45%;<br>
+				<strong>width:</strong> 100%;<br>
+				<strong>text-align:</strong> center;<br>
+			}<br><br>
+
+			<strong>.conteudo-titulo span.titulo</strong> {<br><br>
+				<strong>color:</strong> #fff;<br>
+				<strong>background-color:</strong> #111;<br>
+				<strong>padding:</strong> 18px;<br>
+				<strong>font-size:</strong> 25px;<br>
+				<strong>letter-spacing:</strong> 5px;<br>
+				<strong>text-transform:</strong> uppercase;<br>
+			}
+			</p>
+		</div>
+
+		<div class="caixa2">
+			<div class="conteudo-titulo">
+				<span class="titulo">Pegando a Estrada
+				</span>
+			</div>
+		</div>
+
+		<div class="caixa3">
+			<div class="conteudo-titulo">
+				<span class="titulo">Pôr do sol
+				</span>
+			</div>
+		</div>
+
+		<div class="conteudo">
+			<h3>Parallax 2</h3>
+			<p>
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+			</p>
+
+			<p>
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+				Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.
+			</p>
+		</div>
+
+		<div class="caixa4">
+			<div class="conteudo-titulo">
+				<span class="titulo">Montanhas
+				</span>
+			</div>
+		</div>
+	</body>
+</html>
